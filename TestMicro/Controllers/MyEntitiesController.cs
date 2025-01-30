@@ -26,7 +26,8 @@ namespace TestMicro.Controllers
             var entities = await _service.GetAllEntitiesAsync();
             foreach (var entity in entities)
             {
-                Console.WriteLine($"Entity ID: {entity.Id}, Name: {entity.Name}");               
+                Console.WriteLine($"Entity ID: {entity.Id}, Name: {entity.Name}");
+                Console.WriteLine("***");
             }
 
             return Ok(entities);
